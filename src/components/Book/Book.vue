@@ -50,7 +50,9 @@
             >
               <v-img
                 height="120"
-                :src="'http://localhost:3001/' + book.cover"
+                :src="
+                  'https://nodejs-auth-restapi-crud.herokuapp.com/' + book.cover
+                "
               ></v-img>
               <v-btn class="ml-4 mt-3" small outlined color="indigo">
                 {{ book.category.title }}
