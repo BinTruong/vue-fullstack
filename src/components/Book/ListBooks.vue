@@ -11,7 +11,12 @@
   </v-list> -->
   <v-container>
     <v-row no-gutters>
-      <v-col md="3" class="pa-2" v-for="book in bookList" :key="book._id">
+      <v-col
+        md="3"
+        class="pa-2"
+        v-for="book in $store.getters.tasksFilteredBook"
+        :key="book._id"
+      >
         <book :book="book" />
       </v-col>
     </v-row>
@@ -20,7 +25,7 @@
 
 <script>
 export default {
-  props: ["bookList"],
+  // props: ["bookList"],
   components: {
     book: require("@/components/Book/Book.vue").default,
   },
