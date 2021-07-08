@@ -1,4 +1,4 @@
-# vuetify-todo
+
 
 ## Project setup
 ```
@@ -22,7 +22,7 @@ BinTruong97 - 12345678 (contributor)
 bintruong9797 - 12345678 (normal)
 these accouns require BE nodejs
 ```
-
+https://vue-books-mamagement-fullstack.netlify.app/
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
