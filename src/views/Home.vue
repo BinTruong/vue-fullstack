@@ -37,7 +37,7 @@
       </v-card-title>
     </v-card>
 
-    <list-books v-if="isShowBook" />
+    <list-books v-if="isShowBook" :bookList="items" />
 
     <no-tasks v-else />
     <div class="text-center">
@@ -69,7 +69,7 @@ export default {
       limit: 8,
       // loading: true,
       // options: {},
-      // items: [],
+      items: [],
       search: "",
       // sortBy: "",
       // sortDesc: "",
@@ -128,7 +128,7 @@ export default {
         this.page = page;
         this.limit = limit;
         this.totalPages = totalPages;
-        // this.items = books;
+        this.items = books;
         this.setBooksData(books);
       }
     },
