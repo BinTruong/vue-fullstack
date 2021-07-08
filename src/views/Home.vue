@@ -37,7 +37,7 @@
       </v-card-title>
     </v-card>
 
-    <list-books v-if="$store.state.books_Data.length" />
+    <list-books v-if="isShowBook" />
 
     <no-tasks v-else />
     <div class="text-center">
@@ -88,6 +88,13 @@ export default {
   //   },
   //   deep: true,
   // },
+  computed: {
+    isShowBook() {
+      return (
+        this.$store.state.books_Data && this.$store.state.books_Data.length
+      );
+    },
+  },
 
   methods: {
     // handleClick() {
